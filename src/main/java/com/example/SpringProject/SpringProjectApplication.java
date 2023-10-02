@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringProjectApplication {
 
 	public static void main(String[] args) {
+		System.out.println("feature -2 added sucessfully");
 		SpringApplication.run(SpringProjectApplication.class, args);
 		System.out.println("feature -1 added sucessfully");
 	}
