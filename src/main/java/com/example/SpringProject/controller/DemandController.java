@@ -20,8 +20,6 @@ public class DemandController {
     @GetMapping("/getdemands")
     public ResponseEntity<List<DemandRequest>> getAllDemand(){
         List<DemandRequest> demands=null;
-        System.out.println("feature -2 created sucessfully");
-        System.out.println("feature -2 added sucessfully");
         try
         {
             demands=demandImpl.getAllDemandRequest();
@@ -29,7 +27,6 @@ public class DemandController {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
-        System.out.println("feature -2 implmeneted sucessfully");
         return new ResponseEntity<List<DemandRequest>>(demands,HttpStatus.OK);
 
     }
