@@ -27,7 +27,9 @@ public class DemandController {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+        System.out.println("console added for get request");
         return new ResponseEntity<List<DemandRequest>>(demands,HttpStatus.OK);
+
 
     }
 
