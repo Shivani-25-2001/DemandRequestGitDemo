@@ -41,6 +41,7 @@ public class DemandController {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+        System.out.println("console for post request added");
         return new ResponseEntity<String>(response,HttpStatus.OK);
 
     }
@@ -54,6 +55,7 @@ public class DemandController {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+        System.out.println("cnsole for getAll request");
         return new ResponseEntity<List<String>>(level,HttpStatus.OK);
 
     }
