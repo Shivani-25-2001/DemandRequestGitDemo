@@ -57,6 +57,7 @@ public class DemandController {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+        System.out.println("cnsole for getAll request");
         return new ResponseEntity<List<String>>(level,HttpStatus.OK);
 
     }
